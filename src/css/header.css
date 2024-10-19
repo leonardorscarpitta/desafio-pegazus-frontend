@@ -1,0 +1,49 @@
+/* Estilização do header
+e seus componentes */
+.header {
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    font-weight: 600;
+}
+
+.header__left__img {
+    width: 5rem;
+}
+
+.header__left__text {
+    font-size: 3rem;
+    color: var(--terciary-color);
+}
+
+.header__navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.header__navbar__list__item__url {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: var(--terciary-color);
+}
+
+.header__navbar__list__item__url:hover {
+    opacity: 0.7;
+}
+
+.header__account {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}

@@ -1,0 +1,76 @@
+/* Realizando import de outros arquivos css para facilitar a manutenção, evitando assim um unico arquivo cheio de propriedades CSS */
+@import url("reset.css");
+@import url("header.css");
+@import url("main.css");
+
+/* Criando variaveis CSS para definir o padrão das cores da página */
+:root {
+    --primary-color: #1A9047;
+    --secondary-color: #2BC866;
+    --terciary-color: #004AAD;
+}
+
+/* Definindo um delay de .4s para todas as animações que forem adicionadas ao site */
+* {
+    transition: all .4s;
+}
+
+/* Quando utilizada essa propriedade 1REM (medida que facilita a responsividade), passa a ser 10px e não 16px, facilitando a manipulação dos itens */
+html {
+    font-size: 62.5%;
+}
+
+/* Definindo algumas estilizações padrões para o corpo da página, como também as fontes a serem utilizadas */
+body {
+    min-height: 100vh;
+    row-gap: 2rem;
+    font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif; 
+    font-weight:600; 
+    font-stretch:condensed;
+}
+
+/* Estilização padrão dos botões para quando o mouse for passado por cima */
+button:hover {
+    cursor: pointer	;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+hr {
+    margin-bottom: 4rem;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ebebeb;
+    padding: 0;
+}
+
+.primary-button {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1.6rem;
+    font-weight: 800;
+    border: none;
+    font-size: 2rem;
+}
+
+.secondary-button {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 1.6rem;
+    font-weight: 800;
+    border: 1px solid var(--primary-color);
+}
+
+.terciary-button {
+    padding: 2rem;
+    font-size: 1.6rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid var(--secondary-color);
+}

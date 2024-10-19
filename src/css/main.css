@@ -1,0 +1,196 @@
+/* Estilização geral da classe "container-nome" para todas as telas (com exceção da Home e sobre nos) se portarem com uma margem identica */
+.container-rastreio,
+.container-ajuda {
+    padding: 0rem 40rem 10rem 40rem;
+}
+
+/* Estilização da area "home" do site
+e seus componentes */
+.container-home {
+    padding: 10rem 40rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    background: var(--secondary-color);
+}
+.container-home__title {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 4rem;
+    color: white;
+}
+.container-home__text {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    color: white;
+}
+.container-home__image {
+    height: 90%;
+    grid-area: 1 / 2 / 4 / 3;
+}
+.container-home__sponsorships {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+/* Estilização da area "rastreio" do site
+e seus componentes */
+.container-rastreio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+}
+
+.container-rastreio__title {
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+.container-rastreio__input {
+    padding: 1.2rem 25rem 1.2rem 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dadada;
+}
+
+.container-rastreio__btn {
+    padding: 1.2rem 3rem 1.2rem 5rem;
+    background-image: url("../assets/location.png");
+    background-position: 18% 50%;
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: #697882;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+.container-rastreio__img {
+    bottom: 5rem;
+    position: absolute;
+}
+
+/* Estilização da area "ajuda" do site
+e seus componentes */
+.container-ajuda {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+}
+
+.container-ajuda-top {
+    display: grid;
+    column-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-ajuda-top__title {
+    color: var(--secondary-color);
+    align-self: center;
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 4rem;
+}
+
+.container-ajuda-top__texto {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.container-ajuda-top__img {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.container-ajuda-cards {
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.container-ajuda-cards__item {
+    padding: 4rem 2rem;
+    height: 40rem;
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--secondary-color);
+}
+
+.container-ajuda-cards__item__title {
+    font-size: 2rem;
+    color: var(--secondary-color)
+}
+
+.container-ajuda-cards__item__texto,
+.container-ajuda-cards__item__texto__lista {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* Estilização da area "sobre-nos" do site
+e seus componentes */
+.container-sobre-nos {
+    padding: 0 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8rem;
+}
+
+.container-sobre-nos__title {
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+.container-sobre-nos__subtitle {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.container-sobre-nos__texto {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.container-sobre-nos__items {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: space-between;
+}
+
+.container-sobre-nos__items__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    width: 33.3%;
+}
+
+.container-sobre-nos__items__box__title { 
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.container-sobre-nos__items__box__texto { 
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.container-sobre-nos-element {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+}
